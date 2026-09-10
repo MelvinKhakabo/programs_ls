@@ -125,15 +125,15 @@ export default function AiCoding() {
 
                   {upcomingCycles.length > 0 && (
                     <div className="mt-6">
-                      <p className="font-mono text-xs uppercase tracking-wide text-ink/50">
+                      <p className="text-base font-bold uppercase tracking-wide text-ink">
                         Select any of the upcoming training cycles to register
                       </p>
-                      <div className="mt-2 flex flex-col gap-2">
+                      <div className="mt-3 flex flex-col gap-2">
                         {upcomingCycles.map((cycle) => (
                           <Button
                             key={cycle.cycleNumber}
                             to={`/register/${cohort.id}?cycle=${cycle.cycleNumber}&dates=${cycle.sessionDates.join(',')}`}
-                            variant="soft"
+                            variant="marigold"
                             className="justify-between"
                           >
                             <span>{formatCycleLabel(cycle)}</span>

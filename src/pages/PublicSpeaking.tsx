@@ -113,7 +113,7 @@ export default function PublicSpeaking() {
 
               {track.cohorts.length > 0 && (
                 <div className="mt-6">
-                  <p className="mb-2 font-mono text-xs uppercase tracking-wide text-ink/50">
+                  <p className="mb-3 text-base font-bold uppercase tracking-wide text-ink">
                     Select a specific class to register
                   </p>
                   <div className="flex flex-col gap-2">
